@@ -10,6 +10,7 @@
   /* font-size: 120%; */
 }
 
+.cs-icon-search { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe800;&nbsp;'); }
 .cs-icon-heart { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xc1100;&nbsp;'); }
 .cs-icon-cancel { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xc1101;&nbsp;'); }
 .cs-icon-heart-filled { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xc1102;&nbsp;'); }
@@ -18,3 +19,5 @@
 .cs-icon-mic-outline { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xc1105;&nbsp;'); }
 .cs-icon-mic { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xc1106;&nbsp;'); }
 .cs-icon-up-big { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xc1107;&nbsp;'); }
+.cs-icon-cog { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xc1800;&nbsp;'); }
+.cs-icon-user { *zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xc1801;&nbsp;'); }

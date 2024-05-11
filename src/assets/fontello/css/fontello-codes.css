@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+.cs-icon-search:before { content: '\e800'; } /* '' */
 .cs-icon-heart:before { content: '󁄀'; } /* '\c1100' */
 .cs-icon-cancel:before { content: '󁄁'; } /* '\c1101' */
 .cs-icon-heart-filled:before { content: '󁄂'; } /* '\c1102' */
@@ -8,3 +9,5 @@
 .cs-icon-mic-outline:before { content: '󁄅'; } /* '\c1105' */
 .cs-icon-mic:before { content: '󁄆'; } /* '\c1106' */
 .cs-icon-up-big:before { content: '󁄇'; } /* '\c1107' */
+.cs-icon-cog:before { content: '󁠀'; } /* '\c1800' */
+.cs-icon-user:before { content: '󁠁'; } /* '\c1801' */
