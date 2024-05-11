@@ -1,5 +1,23 @@
 # ChromeSidepanel
 
+## Build Chrome Extension
+
+The chrome extension files are in the "chrome" folder
+
+To build cd into chrome
+
+```
+npm run build
+```
+
+This will copy all the files into the angular build directory `/dist`
+
+## Load Extension
+
+To load the extension into Chrome, go to `chrome://extensions` -> `Load Unpacked` -> open the angular `dist` directory.
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
 
 ## Development server
