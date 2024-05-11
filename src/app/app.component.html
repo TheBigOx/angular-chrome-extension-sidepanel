@@ -1,7 +1,17 @@
-
-<h1>Main App</h1>
-<nav>
-  <ul><a routerLink="/dashboard">Dashbaord</a></ul>
-  <ul><a routerLink="/users">Users</a></ul>
-</nav>
-<router-outlet></router-outlet>
+<div class="container">
+  <div class="sidebar">
+    <nav>
+      <ul><a routerLink="/dashboard"><i class="cs-icon-mic-outline"></i>D</a></ul>
+      <ul><a routerLink="/users"><i class="cs-icon-up-big"></i>U</a></ul>
+    </nav>
+  </div>
+  <div class="main">
+    <div class="header">
+      <img src="assets/images/logo.svg" alt="Logo" width="30" height="30"> <!-- Add this line -->
+      <h1>Main App</h1>
+    </div>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

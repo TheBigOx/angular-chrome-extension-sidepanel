@@ -18,5 +18,8 @@
   "side_panel": {
     "default_path": "index.html"
   },
-  "permissions": ["sidePanel"]
+  "permissions": ["sidePanel"],
+  "content_security_policy": {
+    "script-src": ["'self'", "'unsafe-inline'"]
+  }
 }
