@@ -23,12 +23,25 @@ This will copy all the files into the angular build directory `/dist`
 npm run build:all
 ```
 
+### Build watch
+
+To build the application and have it automatically update the dist folder so that it can be quickly reloaded as an extension run:
+
+```
+npm run build:watch
+```
+
+Note, that the extension will need to closed be reopened (not reloaded) in order to see the change.
+
 
 ## Load Extension
 
 To load the extension into Chrome, go to `chrome://extensions` -> `Load Unpacked` -> open the angular `dist` directory.
 
 
+
+
+# Generated Readme.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
 

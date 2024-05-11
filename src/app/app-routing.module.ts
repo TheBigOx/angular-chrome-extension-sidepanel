@@ -7,7 +7,8 @@ const routes: Routes = [
   { path: 'help', loadChildren: () => import('./pages/help/help.module').then(m => m.HelpModule) },
   { path: 'chat', loadChildren: () => import('./pages/chat/chat.module').then(m => m.ChatModule) },
   { path: 'search', loadChildren: () => import('./pages/search/search.module').then(m => m.SearchModule) },
-  { path: 'liked', loadChildren: () => import('./pages/liked/liked.module').then(m => m.LikedModule) }
+  { path: 'liked', loadChildren: () => import('./pages/liked/liked.module').then(m => m.LikedModule) },
+  { path: 'settings', loadChildren: () => import('./pages/settings/settings.module').then(m => m.SettingsModule) }
 ];
 
 @NgModule({
