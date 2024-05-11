@@ -36,7 +36,7 @@ Note, that the extension will need to closed be reopened (not reloaded) in order
 
 ## Load Extension
 
-To load the extension into Chrome, go to `chrome://extensions` -> `Load Unpacked` -> open the angular `dist` directory.
+To load the extension into Chrome, go to `chrome://extensions` -> `Load Unpacked` -> open the angular `dist/chrome-sidepanel` directory.
 
 
 ## Useful commands
