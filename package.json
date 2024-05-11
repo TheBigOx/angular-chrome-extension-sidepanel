@@ -4,8 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration production",
+    "build:angular": "ng build --configuration production",
     "build:chrome": "npm --prefix ./chrome run build",
+    "build": "npm run build:angular && npm run build:chrome",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
