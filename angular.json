@@ -33,7 +33,15 @@
               "src/styles.scss",
               "src/assets/fontello/css/fontello.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "optimization": {
+              "scripts": true,
+              "styles": {
+                "minify": true,
+                "inlineCritical": false
+              },
+              "fonts": true
+            }
           },
           "configurations": {
             "production": {

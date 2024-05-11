@@ -19,7 +19,14 @@
     "default_path": "index.html"
   },
   "permissions": ["sidePanel"],
+  "web_accessible_resources": [
+    {
+      "resources": ["/assets/**/*"],
+      "matches": ["<all_urls>"]
+    }
+  ],
   "content_security_policy": {
-    "script-src": ["'self'", "'unsafe-inline'"]
+    "extension_pages": "style-src 'self' 'unsafe-inline'; script-src 'self'; object-src 'self';"
   }
+  
 }
