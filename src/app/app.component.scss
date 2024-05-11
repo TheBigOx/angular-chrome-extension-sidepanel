@@ -1,22 +1,40 @@
 /* styles.css */
 
+$header-color: #212121;
+$menu-colour: #171717;
+$background-colour: #212121;
+$font-colour: #ECECEC;
+
 .container {
+  background-color: $background-colour;
   display: flex;
   flex-direction: row-reverse;
   height: 100vh;
   .sidebar {
     flex: 0 0 60px; /* Changed from 200px to 60px */
-    background-color: #f8f9fa;
+    background-color: $menu-colour;
     align-items: center;
     text-align: center; /* Add this line */
     ul {
       list-style-type: none;
       padding: 0;
+      margin-top: 0;
+     
       li {
+        padding: 18px 0;
+        a {
+          color: $font-colour;
+          font-weight: normal;
+        }
         text-align: center;
         cursor: pointer;
         &:hover {
-          background-color: #e9ecef;
+          background-color: $header-color;
+        }
+      }
+      li:first-child {
+        a {
+          padding-top: 0;
         }
       }
     }
@@ -26,9 +44,10 @@
     flex-grow: 1;
     overflow: auto;
     .header {
-      height: 50px;
-      background-color: #e9ecef;
-      padding: 0 5px;
+      height: 56px;
+      background-color: $header-color;
+      padding: 0 12px;
+      margin:0;
       display: flex; /* Add this line */
       align-items: center; /* Add this line */
       h1 {
@@ -38,6 +57,7 @@
     }
     .content {
       padding: 20px;
+      
     }
   }
   
