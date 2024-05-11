@@ -53,6 +53,12 @@ Run `ng serve` or `npm run start` for a dev server. Navigate to `http://localhos
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
+For example, to generate a new module with a component called settings, under the pages folder run:
+
+```
+ng generate module pages/settings --route settings --module app.module
+```
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
