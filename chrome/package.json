@@ -2,9 +2,10 @@
   "name": "my-typescript-project",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/background.js",
+  "type": "module",
   "scripts": {
-    "copy-assets": "copyfiles -u 1 src/images/* dist && copyfiles -u 1 src/manifest.json dist && copyfiles -u 1 src/**/*.html dist",
+    "start": "node dist/app.js",
+    "copy-assets": "copyfiles -u 1 src/assets/images/* dist && copyfiles -u 1 src/manifest.json dist && copyfiles -u 1 src/**/*.html dist",
     "copy-to-angular": "copyfiles -u 1 dist/**/* ../dist/chrome-sidepanel",
     "build": "tsc && npm run copy-assets && npm run copy-to-angular"
   },
