@@ -1,16 +1,28 @@
-# ChromeSidepanel
+# Angular Chrome Extension Sidepanel
 
 ## Build Chrome Extension
 
-The chrome extension files are in the "chrome" folder
+The chrome extension files are in the `chrome` folder.  After they are built, they must be copied into the angular `/dist/chrome-sidepanel` folder.
 
-To build cd into chrome
+
+### Build individually.
+
+First build the angular application
 
 ```
 npm run build
 ```
 
+Then cd into the `chrome` folder and build using the same command.
+
 This will copy all the files into the angular build directory `/dist`
+
+### Build all
+
+```
+npm run build:all
+```
+
 
 ## Load Extension
 
@@ -22,7 +34,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` or `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
