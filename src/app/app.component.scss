@@ -35,6 +35,10 @@ $font-colour: #ECECEC;
         cursor: pointer;
         .active, &:hover {
           background-color: $header-color;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+          
+
         }
       }
       // li:first-child {
