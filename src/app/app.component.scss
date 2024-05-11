@@ -21,22 +21,25 @@ $font-colour: #ECECEC;
       margin-top: 0;
      
       li {
-        padding: 18px 0;
+        padding: 0;
         a {
           color: $font-colour;
           font-weight: normal;
+          display: block;
+          height: 100%;
+          padding: 18px 0;
         }
         text-align: center;
         cursor: pointer;
-        &:hover {
+        .active, &:hover {
           background-color: $header-color;
         }
       }
-      li:first-child {
-        a {
-          padding-top: 0;
-        }
-      }
+      // li:first-child {
+      //   a {
+      //     padding-top: 0;
+      //   }
+      // }
     }
   }
   
