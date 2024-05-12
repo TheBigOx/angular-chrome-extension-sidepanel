@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node dist/app.js",
-    "copy-assets": "copyfiles -u 1 src/assets/images/* dist && copyfiles -u 1 src/manifest.json dist && copyfiles -u 1 src/**/*.html dist",
+    "copy-assets": "copyfiles -u 1 src/assets/images/* dist && copyfiles -u 1 src/manifest.json dist && copyfiles -u 1 src/**/*.html dist && copyfiles -u 1 src/**/*.js dist",
     "copy-to-angular": "copyfiles -u 1 dist/**/* ../dist/chrome-sidepanel",
     "build": "tsc && npm run copy-assets && npm run copy-to-angular"
   },
