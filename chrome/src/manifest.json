@@ -27,6 +27,6 @@
   ],
   "content_security_policy": {
     "extension_pages": "style-src 'self' 'unsafe-inline'; script-src 'self'; object-src 'self';"
-  }
-  
+  },
+  "options_page": "options.html"
 }

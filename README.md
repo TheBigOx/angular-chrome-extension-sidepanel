@@ -10,17 +10,23 @@ The chrome extension files are in the `chrome` folder.  After they are built, th
 First build the angular application
 
 ```
-npm run build
+npm run build:angular
 ```
 
-Then cd into the `chrome` folder and build using the same command.
+Then cd into the `chrome` folder and build
+
+```
+npm run build
+```
 
 This will copy all the files into the angular build directory `/dist`
 
 ### Build all
 
+From the base directory run:
+
 ```
-npm run build:all
+npm run build
 ```
 
 ### Build watch

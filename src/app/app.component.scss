@@ -11,7 +11,7 @@ $font-colour: #ECECEC;
   flex-direction: row-reverse;
   height: 100vh;
   .sidebar {
-    flex: 0 0 60px; /* Changed from 200px to 60px */
+    flex: 0 0 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
