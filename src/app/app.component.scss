@@ -2,7 +2,9 @@
 
 $header-color: #212121;
 $menu-colour: #080808;
-$background-colour: #212121;
+$background-colour: $header-color;
+$menu-active-colour:$background-colour;
+$menu-hover-colour: #141414;
 $font-colour: #ECECEC;
 
 .container {
@@ -34,18 +36,15 @@ $font-colour: #ECECEC;
         text-align: center;
         cursor: pointer;
         .active, &:hover {
-          background-color: $header-color;
+          background-color: $menu-active-colour;
           border-top-right-radius: 15px;
           border-bottom-right-radius: 15px;
-          
-
         }
+        &:hover {
+          background-color: $menu-hover-colour;
+        }
+          
       }
-      // li:first-child {
-      //   a {
-      //     padding-top: 0;
-      //   }
-      // }
     }
   }
   
