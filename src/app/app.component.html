@@ -1,5 +1,6 @@
 <div class="container">
-  <div class="sidebar" *ngIf="showNavMenu">
+  @if(showNavMenu) {
+  <div class="sidebar">
     <nav>
       <ul>
         <li><a routerLink="/dashboard" routerLinkActive="active"><i class="cs-icon-mic-outline"></i></a></li>
@@ -16,11 +17,14 @@
       </ul>
     </nav>
   </div>
+  }
   <div class="main">
-    <div class="header" *ngIf="showNavMenu">
+    @if(showNavMenu) {
+    <div class="header">
       <img src="assets/images/logo.svg" alt="Logo" width="30" height="30"> <!-- Add this line -->
       <h1>Main App 1</h1>
     </div>
+    }
     <div class="content">
       <router-outlet></router-outlet>
     </div>

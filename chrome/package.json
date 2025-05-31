@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "start": "node dist/app.js",
-    "copy-assets": "copyfiles -u 1 src/assets/images/* dist && copyfiles -u 1 src/manifest.json dist && copyfiles -u 1 src/**/*.html dist",
-    "copy-to-angular": "copyfiles -u 1 dist/**/* ../dist/chrome-sidepanel",
-    "build": "tsc && npm run copy-assets && npm run copy-to-angular"
+    "copy-assets": "copyfiles -Vu 1 src/assets/images/* dist && copyfiles -Vu 1 src/manifest.json dist && copyfiles -Vu 1 src/**/*.html dist",
+    "copy-to-angular": "copyfiles -u 3 ../dist/chrome-sidepanel/assets/images/**/* dist && copyfiles -u 3 ../dist/chrome-sidepanel/assets/fontello/**/* dist",
+    "copy-files": "copyfiles -u 3 ../dist/chrome-sidepanel/* dist",
+    "build": "tsc && npm run copy-assets && npm run copy-to-angular && npm run copy-files"
   },
   "keywords": [],
   "author": "",
